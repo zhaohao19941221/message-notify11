@@ -23,7 +23,7 @@ composer require coderzhao/message-notify -vvv
 发布配置文件`config/message.php`
 
 ```bash
-hyperf vendor:publish hyperf/message-notify
+hyperf vendor:publish coderzhao/message-notify
 ```
 
 
