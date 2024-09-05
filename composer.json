@@ -1,0 +1,48 @@
+{
+    "name": "coderzhao/message-notify",
+    "description": "Hyperf DingTalk Mail Wechat FeiShu message",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "coderzhao",
+            "email": "zhaohao731869706@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MessageNotify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MessageNotifyTest\\": "test/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "hyperf/guzzle": "~3.1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/config": "~3.1.0",
+        "hyperf/di": "~3.1.0",
+        "hyperf/ide-helper": "~3.1.0",
+        "hyperf/utils": "~3.1.0",
+        "phpstan/phpstan": "^1.11",
+        "phpunit/phpunit": "^9.4"
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "cs-fix": "./vendor/bin/php-cs-fixer fix",
+        "analyse": "phpstan analyse --memory-limit 4028M"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "MessageNotify\\ConfigProvider"
+        }
+    }
+}
